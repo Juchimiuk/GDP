@@ -1,0 +1,25 @@
+{
+  "name": "gernciador",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "juchimiuk",
+  "license": "ISC",
+  "description": "Simple todo list with time tracking (Prisma + SQLite)",
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "express": "^5.2.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prisma": "^6.19.2"
+  }
+}
